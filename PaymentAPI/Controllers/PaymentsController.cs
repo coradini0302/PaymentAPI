@@ -92,7 +92,7 @@ namespace PaymentAPI.Controllers
 
             return NoContent();
         }
-
+        //teste
         private bool PaymentExists(int id)
         {
             return _context.Payments.Any(e => e.Id == id);
