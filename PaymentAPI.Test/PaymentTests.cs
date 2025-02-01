@@ -99,7 +99,7 @@ namespace PaymentAPI.Tests
             // Arrange: Certifique-se de que o pagamento com ID 1 existe no banco
 
             // Act
-            var response = await _client.DeleteAsync("/api/payments/1");
+            var response = await _client.DeleteAsync("/api/payments/2");
 
             // Assert
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.NoContent);
